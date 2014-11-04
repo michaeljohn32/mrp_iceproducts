@@ -3,8 +3,8 @@
     <data>
         <record model="ir.ui.view" id="view_product_template_product_form_inherit">
             <field name="name">ICE Product Product Inherit</field>
-            <field name="model">product.template</field>
-            <field name="inherit_id">product.product_template_only_form_view</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id">product.product_template_form_view</field>
             <field name="arch" type="xml">
                 <data>
                     <xpath expr='//form/sheet/div[0]/div[0]/label' position="after">
@@ -13,6 +13,5 @@
                 </data>
             </field>
         </record>
-           
     </data>
 </openerp>

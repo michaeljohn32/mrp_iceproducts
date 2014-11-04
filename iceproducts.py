@@ -12,10 +12,10 @@
 #
 #
 ###############################################
-from openerp import models, fields, api, exceptions
+from openerp import models, fields
 
 class product_product(models.Model):
-    _inherit = 'product.template'
+    _inherit = 'product.product'
 
     drawingfilename = fields.Char(string="DrawingFileName")
 
