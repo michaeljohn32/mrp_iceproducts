@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <openerp>
     <data>
-        <record model="ir.ui.view" id="view_product_template_product_form_inherit">
+        <record model="ir.ui.view" id="view_product_template_product_form_dfn_inherit">
             <field name="name">ICE Product Product Inherit</field>
-            <field name="model">product.product</field>
-            <field name="inherit_id">product.product_template_form_view</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
             <field name="arch" type="xml">
                 <data>
-                    <xpath expr='//form/sheet/div[0]/div[0]/label' position="after">
-                        <field name="drawingfilename"/>
+                    <xpath expr="//page[@string='Information']/group[1]/group[1]/field[@name='type']" position="before">
+                                <field name="drawingfilename"/>
                     </xpath>
                 </data>
             </field>

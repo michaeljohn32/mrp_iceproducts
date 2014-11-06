@@ -14,8 +14,8 @@
 ###############################################
 from openerp import models, fields
 
-class product_product(models.Model):
-    _inherit = 'product.product'
+class product_template(models.Model):
+    _inherit = 'product.template'
 
     drawingfilename = fields.Char(string="DrawingFileName")
 
