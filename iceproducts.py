@@ -20,6 +20,6 @@ class product_template(models.Model):
     drawingfilename = fields.Char(string="DrawingFileName")
     productname = fields.Char(string="BOM_ProductDesc")
     bomproductid = fields.Char(string="BOM_ProductID")
-    bom_product_timestamp = fields.Datetime(string="Product Update Timestamp")
+    product_timestamp = fields.Datetime(string="Product Update Timestamp")
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
