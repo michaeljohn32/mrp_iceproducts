@@ -21,5 +21,7 @@ class product_template(models.Model):
     productname = fields.Char(string="BOM_ProductDesc")
     bomproductid = fields.Char(string="BOM_ProductID")
     product_timestamp = fields.Datetime(string="Product Update Timestamp")
+    supplier_timestamp = fields.Datetime(string="Supplier Update Timestamp")
+    bom_timestamp = fields.Datetime(string="BoM Update Timestamp")
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
