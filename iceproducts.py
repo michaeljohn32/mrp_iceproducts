@@ -24,4 +24,8 @@ class product_template(models.Model):
     supplier_timestamp = fields.Datetime(string="Supplier Update Timestamp")
     bom_timestamp = fields.Datetime(string="BoM Update Timestamp")
 
+class res_partner(models.Model):
+    _inherit = 'res.partner'
+
+    bom_supplierid = fields.Integer(string="BOM_SupplierID")
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
